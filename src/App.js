@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header/Header";
+import UserName from "./Components/Shared/UserName/UserName";
+import ConversationDisplay from "./Components/ConversationDisplay/ConversationDisplay";
+import ConversationTypeBox from "./Components/Shared/TypeBox/ConversationTypeBox";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" mx-auto">
+      <div className="w-[428px] relative bg-[#1B202D] rounded-[50px] h-[926px] mx-auto p-6">
+        <Header />
+        <UserName />
+        <ConversationDisplay />
+        <ConversationTypeBox />
+      </div>
     </div>
   );
 }
